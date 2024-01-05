@@ -1,0 +1,42 @@
+.CarPageDescription{
+    margin: 30px;
+    display: flex;
+
+    .TextDescription{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        padding: 20px;
+        h1{
+            font-size: 15px;
+            margin: 0;
+        }
+        h2{
+            display: flex;
+            margin: 0;
+            align-items: center;
+            font-weight:600;
+            font-size: 13px;
+            p{
+                padding-left: 5px;
+                margin: 5px;
+                font-weight: bolder;
+            }
+        }
+
+    }
+    .CarPageDescription__values{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        align-items:start;
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 0;
+        span{
+            font-weight: normal;
+            color: #3e4246;
+        }
+    }
+
+}

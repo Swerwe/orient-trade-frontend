@@ -1,0 +1,27 @@
+.AuctionListDescription{
+    margin: 40px;
+    margin-left: 70px;
+    padding-top: 40px;
+    display: flex;
+    h2{
+        text-align: left;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .AuctionListDescription__defs{
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        div{
+            display: flex;
+            p{
+                font-weight: bold;
+                margin: 0;
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+        }
+
+    }
+}

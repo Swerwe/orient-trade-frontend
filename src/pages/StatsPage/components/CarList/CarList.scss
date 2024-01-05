@@ -1,0 +1,10 @@
+.CarList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    .yc-spin__inner {
+        border: 2px solid #77b0fc;
+        border-left: none;
+    }
+}

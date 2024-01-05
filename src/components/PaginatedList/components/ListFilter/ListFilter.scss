@@ -1,0 +1,12 @@
+.Filter-Marka,.Filter-Model,.Filter-Rate,.Filter-YearFrom, .Filter-YearTo,.Filter-CapacityFrom,.Filter-CapacityTo, .Filter-MileageFrom, .Filter-MileageTo{
+    background-color: white;
+    border-radius: 3px;
+    width: 200px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.Filter-MileageFrom{
+    height: 25px;
+}
+.Filter-MileageTo{
+    height: 25px;
+}

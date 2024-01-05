@@ -1,0 +1,41 @@
+.CarItemDescription{
+    display: flex;
+    text-decoration: none;
+    .CarItem__MainDescription, .CarItem__SecondaryDescription{
+        padding: 20px;
+        p{
+            display: flex;
+            margin: 0;
+        }
+        .Car-Name, .Car-Equipment{
+            padding: 0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .Car-Name{
+            color: #3A3C48;
+            font-size: 1.25em;
+        }
+        .Car-Equipment{
+            color: #81828F;
+            font-size: 1em;
+        }
+        .Description-Name{
+    
+        }
+        .Description-Value{
+            font-weight: bold;
+            padding-left: 4px;
+        }
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:715px) {
+    .CarItemDescription{
+        flex-direction: column;
+    }
+    
+}

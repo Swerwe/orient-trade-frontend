@@ -1,0 +1,27 @@
+.CarItem{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-family:'Montserrat';
+    width:650px;
+    border-radius: 18px;
+    margin: 10px;
+}
+.CarItem-Images{
+    display: flex;
+    align-items: center;
+    img{
+        border-radius: 18px;
+        margin: 10px;
+        width: 160px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:715px) {
+    .CarItem{
+        width: 250px;
+        margin-left: 70px;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,33 @@
+.ListSort{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-left: 0;
+    .Sort-Select{
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 4px;
+        background: white;
+    }
+
+}
+.Sort-Select__option{
+    border: 1px solid rgb(220, 220, 220);
+    .g-select-list__option_disabled{
+        color: #b2b6bd;
+        &:hover{
+            background-color: white;
+        }
+    }
+    .yc-list__item-content{
+        background-color: white;
+        &:hover{
+            background-color: #b2b6bd;
+        }
+    }
+}
+@media screen and (max-width:715px) {
+    .ListSort{
+        margin-left: 50px;
+    }
+    
+}
