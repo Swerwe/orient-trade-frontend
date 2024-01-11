@@ -6,16 +6,24 @@ interface IListFilterProps {
     className?: string;
     setFilters: React.Dispatch<React.SetStateAction<Filters>>;
     filters: Filters;
-    markaObject: {
-        [key: string]: number;
-    };
-    modelObject: {
-        [key: string]: number;
-    };
+    markaObject: MarkaObj
+    modelObject: ModelObj
     rates: string[];
     years: string[];
     capacities: number[];
 }
+type MarkaObj = {
+    [key: string]: {
+      count:number;
+      model:string;
+    };
+  }
+  type ModelObj = {
+    [key: string]: {
+      count:number;
+      marka:string;
+    }
+  }
 type Filters = {
     marka_name?: string;
     model_name?: string;
@@ -39,8 +47,8 @@ const ListFilter: React.FunctionComponent<IListFilterProps> = ({
 }) => {
     const [mileageFrom, setMileageFrom] = useState<number |string>('')
     const [mileageTo, setMileageTo] = useState<number|string>('')
-    const markaArray: [string, number][] = Object.entries(markaObject);
-    const modlelArray: [string, number][] = Object.entries(modelObject);
+    const markaArray = Object.entries(markaObject).map(([marka,obj]) => [marka,obj.count]);
+    const modlelArray = Object.entries(modelObject).map(([model,obj]) => [model,obj.count]);
     useEffect(()=>{
         setFilters({ ...filters, mileage_from:String(mileageFrom), mileage_to:String(mileageTo) })
     },[mileageFrom,mileageTo])

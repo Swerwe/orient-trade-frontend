@@ -13,10 +13,16 @@ interface IProps {
   isAuc:boolean;
 }
 type MarkaObj = {
-  [key: string]: number;
+  [key: string]: {
+    count:number;
+    model:string;
+  };
 }
 type ModelObj = {
-  [key: string]: number;
+  [key: string]: {
+    count:number;
+    marka:string;
+  }
 }
 type Filters = {
   marka_name?: string;
@@ -87,8 +93,8 @@ const PaginatedList: React.FC<IProps> = ({ className, pageCount, setPageCount, i
         });
       const markaObj = await response.json();
       setMarkaObj(markaObj);
-
-      response = await fetch(`${path}/model/names`,
+      const modelParams = filters.marka_name ? `?marka=${filters.marka_name}` : ''
+      response = await fetch(`${path}/model/names${modelParams}`,
         {
           headers: {
             "Content-Type": "application/json"
@@ -129,7 +135,7 @@ const PaginatedList: React.FC<IProps> = ({ className, pageCount, setPageCount, i
     };
 
     fetchData();
-  }, [pageNumber]);
+  }, [pageNumber,filters.marka_name]);
   useEffect(() => setPageNumber(0), [filters])
 
   const handlePageChange = (selectedPage: { selected: number }) => {
