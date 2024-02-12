@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a21bddb.css",
-    "main.js": "/static/js/main.3633c248.js",
+    "main.css": "/static/css/main.37602848.css",
+    "main.js": "/static/js/main.62311e8a.js",
     "static/js/787.38559ca1.chunk.js": "/static/js/787.38559ca1.chunk.js",
+    "static/media/request-bg.png": "/static/media/request-bg.df5c8641f3ad9ca42824.png",
+    "static/media/orient-background1.jpg": "/static/media/orient-background1.75944a3f28566726cdc7.jpg",
+    "static/media/TildaSans-VF.woff2": "/static/media/TildaSans-VF.d726cb6032d6af6310cb.woff2",
+    "static/media/promo.jpeg": "/static/media/promo.0e0cd186724f4e70e44a.jpeg",
     "index.html": "/index.html",
-    "main.6a21bddb.css.map": "/static/css/main.6a21bddb.css.map",
-    "main.3633c248.js.map": "/static/js/main.3633c248.js.map",
+    "main.37602848.css.map": "/static/css/main.37602848.css.map",
+    "main.62311e8a.js.map": "/static/js/main.62311e8a.js.map",
     "787.38559ca1.chunk.js.map": "/static/js/787.38559ca1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a21bddb.css",
-    "static/js/main.3633c248.js"
+    "static/css/main.37602848.css",
+    "static/js/main.62311e8a.js"
   ]
 }
