@@ -47,7 +47,7 @@ const PaginatedList: React.FC<IProps> = ({ className, pageCount, setPageCount, i
   const [rates, setRates] = useState<string[]>([]);
   const [years, setYears] = useState<string[]>([]);
   const [capacities, setCapacities] = useState<number[]>([]);
-  const path = isAuc ? 'http://localhost:8000/api/auctions' : 'http://localhost:8000/api/statistics'
+  const path = isAuc ? 'http://94.139.246.55:8000/api/auctions' : 'http://94.139.246.55:8000/api/statistics'
   const {  width } = useWindowDimensions();
   useEffect(() => {
     const fetchData = async () => {

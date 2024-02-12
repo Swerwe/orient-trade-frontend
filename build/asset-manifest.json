@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.37602848.css",
-    "main.js": "/static/js/main.62311e8a.js",
+    "main.css": "/static/css/main.83255814.css",
+    "main.js": "/static/js/main.ca74e180.js",
     "static/js/787.38559ca1.chunk.js": "/static/js/787.38559ca1.chunk.js",
     "static/media/request-bg.png": "/static/media/request-bg.df5c8641f3ad9ca42824.png",
-    "static/media/orient-background1.jpg": "/static/media/orient-background1.75944a3f28566726cdc7.jpg",
+    "static/media/orient-background1.jpg": "/static/media/orient-background1.c83978d6293d39c2aa51.jpg",
     "static/media/TildaSans-VF.woff2": "/static/media/TildaSans-VF.d726cb6032d6af6310cb.woff2",
     "static/media/promo.jpeg": "/static/media/promo.0e0cd186724f4e70e44a.jpeg",
     "index.html": "/index.html",
-    "main.37602848.css.map": "/static/css/main.37602848.css.map",
-    "main.62311e8a.js.map": "/static/js/main.62311e8a.js.map",
+    "main.83255814.css.map": "/static/css/main.83255814.css.map",
+    "main.ca74e180.js.map": "/static/js/main.ca74e180.js.map",
     "787.38559ca1.chunk.js.map": "/static/js/787.38559ca1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37602848.css",
-    "static/js/main.62311e8a.js"
+    "static/css/main.83255814.css",
+    "static/js/main.ca74e180.js"
   ]
 }

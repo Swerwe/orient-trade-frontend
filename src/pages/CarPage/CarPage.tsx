@@ -11,7 +11,7 @@ const CarPage: React.FC = () => {
     const [isLoading,setIsLoading] = useState<boolean>(true);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:8000/api/carpage?id=${id}`,
+            const response = await fetch(`http://94.139.246.55:8000/api/carpage?id=${id}`,
             {
               headers: {
                 "Content-Type": "application/json"
