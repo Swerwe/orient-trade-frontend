@@ -1,59 +1,68 @@
 .NavBar{
-    height: 45px;
+    height: 80px;
     text-align: center;
-    width: 100%;
-    min-width: auto;
-    position: fixed;
+    min-width: 100vw;
+    position: absolute;
+    z-index: 100;
     top:0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
     align-items: center;
-    background-color: white;
-    .NavBar__logo{
-        color: #4f46e5;
-        font-weight: bolder;
-        width: 200px;
+    width: 100%;
+    .contacts{
         display: flex;
-        align-items: center;
-        cursor: pointer;
-        img{
-            padding-left: 20px;
-            padding-right: 10px;
-            width: 30px;
-            height: 30px;
-        }
+        gap: 5px;
+        position: absolute;
+        right: 20px;
+        top:20px
     }
     .NavBar__items{
         display: flex;
         padding-left: 30px;
         padding-top: 2px;
+        height: 80px;
         gap: 35px;
         justify-content: space-around;
+        align-items: center;
         a{
             text-decoration: none;
         }
         div{
-
-            color: #606267;
+            color: #dddbdb;
             font-size: 14px;
+            transition: color 0.3s, font-size 0.3s ,padding-bottom 0.2s; 
             font-weight: 600;
+            width: 70px;
+            height: 15px;
             cursor: pointer;
             &:hover{
-                color: #4f46e5;
+                color: #fff;
+                padding-bottom: 1px;
+
             }
         }
     }
 }
-@media screen and (max-width:480px) {
-    .NavBar__items{
-        gap: 5px;
-    }
+@media screen and (max-width:1000px){
     .NavBar{
-        .NavBar__logo{
-            width: 140px;
+        .NavBar__items{
+            gap:16px;
         }
     }
-    
+}
+@media screen and (max-width:950px){
+    .NavBar{
+        background-color: black;
+        height: 460px;
+        justify-content: center;
+        .NavBar__items{
+            flex-direction: column;
+        }
+        .contacts{
+            left: 46%;
+            top:330px;
+        }
+    }
 }

@@ -4,15 +4,17 @@ import { BrowserRouter as Router, Route, Routes, Navigate   } from 'react-router
 import StatsPage from './pages/StatsPage/StatsPage';
 import CarPage from './pages/CarPage/CarPage';
 import AucPage from './pages/AucPage/AucPage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
 function App() {
 
   return (
     <div className="App">
       <Router>
         <Routes>
+        <Route path="/" Component={AboutPage} />
           <Route
           path="*"
-          element={<Navigate to="/aucstats" replace />}
+          element={<Navigate to="/" replace />}
           />
           <Route path="/carstats" Component={StatsPage} />
           <Route path="/aucstats" Component={AucPage} />

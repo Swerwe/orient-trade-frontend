@@ -1,0 +1,95 @@
+.MainHeader{
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: "";
+        min-height:60vw;
+        background-image: url("../../../../public/orient-background1.jpg");
+        position: absolute;
+        filter: brightness(42%);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+    }
+    .content{
+        
+        min-height:60vw;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .header{
+            font-weight: bold;
+            font-size: 4vw;
+            padding-bottom: 10px;
+            color: white;
+        }
+        .li{
+            font-family: 'TildaSans',Arial,sans-serif;
+            font-size:1.45vw; 
+            font-weight: 300;
+            padding: 5px;          
+        }
+        .application{
+            color: white;
+            z-index: 15;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #f5914f;
+            border: none;
+            border-radius: 2px;
+            width: 18vw;
+            height: 50px;
+            cursor: pointer;
+            position: absolute;
+            top:43vw;
+            left: 40vw;
+    
+        }
+        .arrow{
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            animation: bounce 1s infinite alternate;
+            top:55vw;
+            left: 47vw;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+
+        }
+    }
+    @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-5px);
+        }
+      }
+}
+@media screen and (max-width:950px){
+    .MainHeader{
+        margin-top: 460px;
+        .content{
+            .application{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .MainHeader{
+        .content{
+            .application{
+                font-size: 10px;
+            }
+        }
+    }
+}

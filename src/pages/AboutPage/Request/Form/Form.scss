@@ -1,0 +1,54 @@
+.Form{
+    font-family: 'TildaSans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding: 30px;
+    .input{
+       width: 380px;
+        .yc-text-input__control{
+            width: 50%;
+            max-width: 380px;
+            border: 1px solid #ffff;
+        }
+        .yc-outer-additional-content__error{
+            color: red;
+        }
+        ::placeholder { /* Most modern browsers support this now. */
+            color:    #8e8c8c;
+         }
+        
+    }
+    .button{
+        font-size: 15px;
+        font-weight: 700;
+        color: #ffff;
+        background-color: #f5914f;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        height: 42px;
+        width: 180px;
+    }
+}
+.sent{
+    width: 580px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #62c584;
+    border-radius: 1px;
+    display: table;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:880px) {
+    .Form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

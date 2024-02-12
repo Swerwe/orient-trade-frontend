@@ -1,0 +1,35 @@
+.CompanyName{
+    font-weight: bold;
+    font-size: 23px;
+    position: absolute;
+    left: 45%;
+    a{
+        text-decoration: none;
+    }
+    div{
+        color: #dddbdb;
+    }
+
+}
+@media screen and (max-width:1280px) {
+    .CompanyName{
+        left: 50%;
+    }
+}
+@media screen and (max-width:1130px) {
+    .CompanyName{
+        left: 55%;
+    }
+}
+@media screen and (max-width:1000px){
+    .CompanyName{
+        left: 50%;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:950px){
+    .CompanyName{
+        left: 44%;
+        top:100px
+    }
+}

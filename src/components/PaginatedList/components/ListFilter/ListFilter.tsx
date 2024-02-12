@@ -47,8 +47,10 @@ const ListFilter: React.FunctionComponent<IListFilterProps> = ({
 }) => {
     const [mileageFrom, setMileageFrom] = useState<number |string>('')
     const [mileageTo, setMileageTo] = useState<number|string>('')
-    const markaArray = Object.entries(markaObject).map(([marka,obj]) => [marka,obj.count]);
-    const modlelArray = Object.entries(modelObject).map(([model,obj]) => [model,obj.count]);
+    const markaArray = Object.entries(markaObject);
+    console.log(markaArray)
+
+    const modelArray = Object.entries(modelObject);
     useEffect(()=>{
         setFilters({ ...filters, mileage_from:String(mileageFrom), mileage_to:String(mileageTo) })
     },[mileageFrom,mileageTo])
@@ -74,7 +76,7 @@ const ListFilter: React.FunctionComponent<IListFilterProps> = ({
                     setFilters({ ...filters, model_name: string[0] })
                 }}
             >
-                {modlelArray.sort().map(([model, count]) => <Select.Option key={model} value={`${model}`}>{`${model} (${count})`}</Select.Option>)}
+                {modelArray.sort().map(([model, count]) => <Select.Option key={model} value={`${model}`}>{`${model} (${count})`}</Select.Option>)}
             </Select>
             <Select
                 size="m"

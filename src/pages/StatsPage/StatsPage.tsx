@@ -6,7 +6,7 @@ const StatsPage: React.FC = () => {
     const [pageCount, setPageCount] = useState(1);
     useEffect(() => {
         const fetchData = async () => {
-          const response = await fetch(`http://5.188.141.25/api/page/count`,
+          const response = await fetch(`http://localhost:8000/api/statistics/count`,
           {
             headers: {
               "Content-Type": "application/json"

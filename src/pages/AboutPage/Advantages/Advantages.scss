@@ -1,0 +1,23 @@
+.Advantages{
+    font-family: 'TildaSans',Arial,sans-serif;
+    padding-top: 165px;
+    padding-bottom: 180px;
+    .header{
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    .why{
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 65px;
+    }
+    .advantages{
+        display: flex;
+        gap:20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}
