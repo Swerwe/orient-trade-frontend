@@ -74,9 +74,22 @@
         }
       }
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:1000px){
     .MainHeader{
         margin-top: 460px;
+
+    }
+}
+@media screen and (max-width:625px){
+    .MainHeader{
+        .content{
+            .header{
+                font-size: 50px;
+            }
+            .li{
+                font-size: 25px;
+            }
+        }
 
     }
 }

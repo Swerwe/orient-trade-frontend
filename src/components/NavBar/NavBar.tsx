@@ -9,6 +9,7 @@ import { WhatsappIcon } from '../../icons/WhatsappIcon/WhatsappIcon';
 const NavBar: React.FunctionComponent = () => {
     return (
         <nav className='NavBar'>
+            <CompanyName/>
             <div className='NavBar__items'>
                 <Link to={"/"}>
                     <div>
@@ -36,7 +37,6 @@ const NavBar: React.FunctionComponent = () => {
                     </div>
                 </Link>
             </div>
-            <CompanyName/>
             <div className="contacts">
                 <a href='https://t.me/Japcar25'>
                     <TelegramIcon height={30} width={30} />
