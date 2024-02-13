@@ -17,10 +17,20 @@
     }
 }
 @media screen and (max-width:900px) {
-    .header{
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+    .Request{
+        .header{
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-    
+}
+@media screen and (max-width:500px) {
+    .Request{
+        .header{
+            width: 290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

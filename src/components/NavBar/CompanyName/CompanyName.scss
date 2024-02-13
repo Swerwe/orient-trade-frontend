@@ -1,8 +1,9 @@
 .CompanyName{
     font-weight: bold;
-    font-size: 23px;
+    font-size: 26px;
     position: absolute;
-    left: 45%;
+    left: 100px;
+    bottom: 15px;
     a{
         text-decoration: none;
     }
@@ -13,21 +14,18 @@
 }
 @media screen and (max-width:1280px) {
     .CompanyName{
-        left: 50%;
+        left: 40px;
+        font-size: 24px;
     }
 }
 @media screen and (max-width:1130px) {
     .CompanyName{
-        left: 55%;
+        left: 10px;
+        font-size: 22px;
     }
 }
+
 @media screen and (max-width:1000px){
-    .CompanyName{
-        left: 50%;
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:950px){
     .CompanyName{
         left: 36.5%;
         top:100px;

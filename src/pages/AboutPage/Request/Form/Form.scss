@@ -51,4 +51,17 @@
         justify-content: center;
         align-items: center;
     }
+    .sent{
+        width: 400px;
+    }
+}
+@media screen and (max-width:500px) {
+    .Form{
+        .input{
+            width: 290px;
+        }
+    }
+    .sent{
+        width: 250px;
+    }
 }
