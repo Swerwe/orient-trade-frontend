@@ -6,7 +6,7 @@ const AucPage: React.FC = () => {
     const [pageCount, setPageCount] = useState(1);
     useEffect(() => {
         const fetchData = async () => {
-          const response = await fetch(`http://94.139.246.55:8000/api/auctions/count`,
+          const response = await fetch(`/api/auctions/count`,
           {
             headers: {
               "Content-Type": "application/json"

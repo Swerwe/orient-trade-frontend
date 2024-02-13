@@ -18,7 +18,7 @@ export const Form: React.FC = () => {
     }
     if (number && name) {
       setIsSent(true);
-      fetch("http://94.139.246.55:8000api/request", {
+      fetch("/api/request", {
         method: "post",
         headers: {
           'Accept': 'application/json',

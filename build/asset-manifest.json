@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.83255814.css",
-    "main.js": "/static/js/main.ca74e180.js",
+    "main.js": "/static/js/main.edcfe525.js",
     "static/js/787.38559ca1.chunk.js": "/static/js/787.38559ca1.chunk.js",
     "static/media/request-bg.png": "/static/media/request-bg.df5c8641f3ad9ca42824.png",
     "static/media/orient-background1.jpg": "/static/media/orient-background1.c83978d6293d39c2aa51.jpg",
@@ -9,11 +9,11 @@
     "static/media/promo.jpeg": "/static/media/promo.0e0cd186724f4e70e44a.jpeg",
     "index.html": "/index.html",
     "main.83255814.css.map": "/static/css/main.83255814.css.map",
-    "main.ca74e180.js.map": "/static/js/main.ca74e180.js.map",
+    "main.edcfe525.js.map": "/static/js/main.edcfe525.js.map",
     "787.38559ca1.chunk.js.map": "/static/js/787.38559ca1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83255814.css",
-    "static/js/main.ca74e180.js"
+    "static/js/main.edcfe525.js"
   ]
 }
