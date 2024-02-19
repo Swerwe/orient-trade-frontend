@@ -5,6 +5,7 @@ import CarPageDescription from './components/CarPageDescription/CarPageDescripti
 import CarPageEmpty from './components/CarPageEmpty/CarPageEmpty';
 import NavBar from '../../components/NavBar/NavBar';
 import './CarPage.scss';
+//{(Object.keys(data).length) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}
 const CarPage: React.FC = () => {
     const id = window.location.href.split('/').reverse()[0];
     const [data,setData] = useState<CarObject | object>({});
@@ -31,7 +32,7 @@ const CarPage: React.FC = () => {
     return (
     <div className='CarPage'>
         <NavBar color='black' />
-        {(Object.keys(data).length) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}
+        <CarPageDescription obj = {data as CarObject} />
     </div>);
 };
 

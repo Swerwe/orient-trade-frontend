@@ -10,12 +10,6 @@ interface ICarPageDescriptionImagesProps {
 }
 const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImagesProps> = ({ pageImages }) => {
   const [imageLinks, setImageLinks] = useState<string[]>(pageImages);
-  const [auctionList,setAuctionList] = useState<string>('');
-  useEffect(() => {
-    if (!imageLinks.length) return
-    setAuctionList(imageLinks[0])
-    setImageLinks(imageLinks.slice(1));
-  }, []);
 
   return (
     <div>
@@ -23,9 +17,7 @@ const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImage
         items={imageLinks.map(str => {
           return { original: str, thumbnail: str }
         })}
-      />
-      <ImageGallery additionalClass="AuctionList"  items={[{original:auctionList}]} showPlayButton={false}></ImageGallery >
-    </div>);
+      />    </div>);
 };
 
 export default CarPageDescriptionImages;
