@@ -17,7 +17,8 @@ const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImage
         items={imageLinks.map(str => {
           return { original: str, thumbnail: str }
         })}
-      />    </div>);
+      />
+    </div>);
 };
 
 export default CarPageDescriptionImages;
