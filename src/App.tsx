@@ -20,7 +20,7 @@ function App() {
           path="*"
           element={<Navigate to="/" replace />}
           />
-          <Route path="/carpage/*" Component={CarPage} />
+          <Route path="/carpage/*"  Component={CarPage} />
         </Routes>
       </Router>
     </div>
