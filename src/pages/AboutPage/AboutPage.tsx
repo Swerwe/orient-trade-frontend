@@ -8,11 +8,13 @@ import { Promo } from './Promo/Promo';
 import { Advantages } from './Advantages/Advantages';
 import { Request } from './Request/Request';
 import { Contacts } from './Contacts/Contacts';
+import { Reviews } from './Reviews/Reviews';
 export const AboutPage: React.FC = () => {
     return (
       <div className="AboutPage">
         <NavBar />
         <MainHeader />
+        <Reviews />
         <Description />
         <Services />
         <Promo />

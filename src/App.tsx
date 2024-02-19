@@ -5,6 +5,10 @@ import StatsPage from './pages/StatsPage/StatsPage';
 import CarPage from './pages/CarPage/CarPage';
 import AucPage from './pages/AucPage/AucPage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
+/*
+          <Route path="/carstats" Component={StatsPage} />
+          <Route path="/aucstats" Component={AucPage} />
+*/
 function App() {
 
   return (
@@ -16,8 +20,6 @@ function App() {
           path="*"
           element={<Navigate to="/" replace />}
           />
-          <Route path="/carstats" Component={StatsPage} />
-          <Route path="/aucstats" Component={AucPage} />
           <Route path="/carpage/*" Component={CarPage} />
         </Routes>
       </Router>

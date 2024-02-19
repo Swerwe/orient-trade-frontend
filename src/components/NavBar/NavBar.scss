@@ -9,20 +9,20 @@
     right: 0;
     bottom: 0;
     display: flex;
-    margin-top: 350px;
+    margin-top: 20px;
     align-items: center;
     width: 100%;
     .contacts{
         display: flex;
         gap: 5px;
         position: absolute;
-        right: 20px;
-        top:20px
+        right: 25px;
+        top:86px;
     }
     .NavBar__items{
         display: flex;
-        padding-left: 30px;
-        padding-top: 2px;
+        padding-left: 140px;
+        padding-top: 120px;
         height: 80px;
         gap: 35px;
         justify-content: space-around;
@@ -55,17 +55,26 @@
         }
     }
 }
+@media screen and (max-width:1100px){
+    .NavBar{
+        .NavBar__items{
+
+            gap:20px;
+        }
+    }
+}
 @media screen and (max-width:1000px){
     .NavBar{
         background-color: black;
         margin-top: 0;
-        height: 460px;
+        height: 480px;
         flex-direction: column;
         padding-top: 50px;
         gap: 60px;
         padding-left: 0;
         .NavBar__items{
             padding-left: 0;
+            padding-top: 0;
             order: 1;
             flex-direction: column;
             position:initial;

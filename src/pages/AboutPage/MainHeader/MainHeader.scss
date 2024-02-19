@@ -15,9 +15,9 @@
 
     }
     .content{
-        height: 1600px;
+        height: 900px;
         color: #fff;
-        background-image: url("../../../../public/orient-background1.jpg");
+        background-image: url("../../../../public/orient-background.jpg");
         background-size: cover;
         background-position: center;
 
@@ -58,8 +58,8 @@
             border: none;
             animation: bounce 1s infinite alternate;
             bottom: 10px;
-            left: 46vw;
-            width: 40px;
+            left: 48vw;
+            width: 60px;
             height: 40px;
             cursor: pointer;
 
@@ -77,6 +77,11 @@
 @media screen and (max-width:1000px){
     .MainHeader{
         margin-top: 460px;
+        .content{
+            .arrow{
+                left: 47vw;
+            }
+        }
 
     }
 }
@@ -88,6 +93,9 @@
             }
             .li{
                 font-size: 25px;
+            }
+            .arrow{
+                left: 42vw;
             }
         }
 
