@@ -6,9 +6,12 @@ import { CompanyName } from './CompanyName/CompanyName';
 import { TelegramIcon } from '../../icons/TelegramIcon/TelegramIcon';
 import { InstagramIcon } from '../../icons/InstagramIcon/InstagramIcon';
 import { WhatsappIcon } from '../../icons/WhatsappIcon/WhatsappIcon';
-const NavBar: React.FunctionComponent = () => {
+interface INavBarProps{
+    color?:string;
+}
+const NavBar: React.FunctionComponent<INavBarProps> = ({color}) => {
     return (
-        <nav className='NavBar'>
+        <nav className='NavBar' style={{backgroundColor:color}}>
             <CompanyName/>
             <div className='NavBar__items'>
                 <Link to={"/"}>

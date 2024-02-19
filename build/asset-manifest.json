@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.18fd1e08.css",
-    "main.js": "/static/js/main.d3b24a1e.js",
+    "main.css": "/static/css/main.d8b333c8.css",
+    "main.js": "/static/js/main.bd3a212b.js",
     "static/js/787.38559ca1.chunk.js": "/static/js/787.38559ca1.chunk.js",
     "static/media/request-bg.png": "/static/media/request-bg.df5c8641f3ad9ca42824.png",
     "static/media/TildaSans-VF.woff2": "/static/media/TildaSans-VF.d726cb6032d6af6310cb.woff2",
     "static/media/orient-background.jpg": "/static/media/orient-background.44d881bfbf087e8267ca.jpg",
     "static/media/promo.jpeg": "/static/media/promo.0e0cd186724f4e70e44a.jpeg",
     "index.html": "/index.html",
-    "main.18fd1e08.css.map": "/static/css/main.18fd1e08.css.map",
-    "main.d3b24a1e.js.map": "/static/js/main.d3b24a1e.js.map",
+    "main.d8b333c8.css.map": "/static/css/main.d8b333c8.css.map",
+    "main.bd3a212b.js.map": "/static/js/main.bd3a212b.js.map",
     "787.38559ca1.chunk.js.map": "/static/js/787.38559ca1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18fd1e08.css",
-    "static/js/main.d3b24a1e.js"
+    "static/css/main.d8b333c8.css",
+    "static/js/main.bd3a212b.js"
   ]
 }

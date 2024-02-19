@@ -30,7 +30,7 @@ const CarPage: React.FC = () => {
     },[])
     return (
     <div className='CarPage'>
-        <NavBar />
+        <NavBar color='black' />
         {(Object.keys(data).length) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}
     </div>);
 };
