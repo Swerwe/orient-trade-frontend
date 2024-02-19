@@ -8,7 +8,7 @@ import './CarPage.scss';
 //{(Object.keys(data).length) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}
 const CarPage: React.FC = () => {
     const id = window.location.href.split('/').reverse()[0];
-    const [data,setData] = useState<CarObject | object>({});
+    const [data,setData] = useState<CarObject | object>({pageImages:[]});
     const [isLoading,setIsLoading] = useState<boolean>(true);
     useEffect(() => {
         const fetchData = async () => {
@@ -32,7 +32,7 @@ const CarPage: React.FC = () => {
     return (
     <div className='CarPage'>
         <NavBar color='black' />
-        <CarPageDescription obj = {data as CarObject} />
+        {(!isLoading) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}
     </div>);
 };
 

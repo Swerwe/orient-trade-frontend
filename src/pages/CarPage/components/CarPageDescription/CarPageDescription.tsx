@@ -11,7 +11,6 @@ interface ICarPageDescriptionProps {
 
 const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({ obj }) => {
     const { title, equipment, auction, year, lot, capacity, transmission,lastBet, body, mileage, price, status, date } = obj;
-
     return (
         <div>
             <h1>{title}</h1>

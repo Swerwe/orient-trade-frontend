@@ -9,12 +9,11 @@ interface ICarPageDescriptionImagesProps {
   pageImages: string[];
 }
 const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImagesProps> = ({ pageImages }) => {
-  const [imageLinks, setImageLinks] = useState<string[]>(pageImages);
 
   return (
     <div>
       <ImageGallery additionalClass="CarPageGallery" showFullscreenButton={true} showPlayButton={false}
-        items={imageLinks.map(str => {
+        items={pageImages.map(str => {
           return { original: str, thumbnail: str }
         })}
       />
