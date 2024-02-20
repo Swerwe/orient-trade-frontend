@@ -3,6 +3,7 @@ import CarObject from '../../../../types/types';
 import './CarPageDescription.scss'
 import CarPageDescriptionImages from '../CarPageDescriptionImages/CarPageDescriptionImages';
 import AuctionListDescription from '../AuctionListDescription/AuctionListDescription';
+import { DescriptionItem } from './DescriptionItem/DescriptionItem';
 
 interface ICarPageDescriptionProps {
     className?: string;
@@ -10,25 +11,48 @@ interface ICarPageDescriptionProps {
 }
 
 const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({ obj }) => {
-    const { title, equipment, auction, year, lot, capacity, transmission,lastBet, body, mileage, price, status, date } = obj;
+    const {
+        name,
+        year,
+        color,
+        startPrice,
+        auction,
+        body,
+        engine,
+        auctionDate,
+        complectation,
+        mileage,
+        rate,
+        productionDate,
+        lot,
+        translateAudio,
+        translateText,
+        pageImages,
+
+
+    } = obj;
     return (
         <div>
-            <h1>{title}</h1>
+            <h1>{name}</h1>
             <div className='CarPageDescription'>
-                <CarPageDescriptionImages pageImages={obj.pageImages as string[]} />
+                <CarPageDescriptionImages pageImages={pageImages as string[]} />
                 <div className="TextDescription">
 
                     <ul className='CarPageDescription__values'>
-                        <li><span>Аукцион:</span> {auction}</li>
-                        <li><span>Год:</span> {year}</li>
-                        <li><span>Лот:</span>№ {lot}</li>
-                        <li><span>Объем:</span> {capacity}см³</li>
-                        <li><span>Комплектация:</span>{equipment}</li>
-                        <li><span>Кузов:</span> {body}</li>
-                        <li><span>Пробег:</span> {mileage}</li>
-                        <li><span>Последняя ставка:</span> {lastBet}</li>
-                        <li><span>Статус:</span> {status}</li>
-                        <li><span>Дата:</span> {date}</li>
+                        <DescriptionItem name='Год' content={year}/>
+                        <DescriptionItem name='Год' content={color}/>
+                        <DescriptionItem name='Год' content={startPrice}/>
+                        <DescriptionItem name='Год' content={auction}/>
+                        <DescriptionItem name='Год' content={body}/>
+                        <DescriptionItem name='Год' content={engine}/>
+                        <DescriptionItem name='Год' content={auctionDate}/>
+                        <DescriptionItem name='Год' content={complectation}/>
+                        <DescriptionItem name='Год' content={mileage}/>
+                        <DescriptionItem name='Год' content={rate}/>
+                        <DescriptionItem name='Год' content={productionDate}/>
+                        {translateAudio && <audio src={translateAudio}></audio>}
+                        <DescriptionItem name='Год' content={lot}/>
+                        <DescriptionItem name='Год' content={translateText}/>
                     </ul>
                 </div>
             </div>

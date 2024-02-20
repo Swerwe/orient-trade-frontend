@@ -21,7 +21,7 @@ const CarItem: React.FC<IProps> = (props) => {
     useEffect(() => {
       const filterImages = async () => {
         const filteredImages = await Promise.all(
-            props.obj.images.map(async (str) => {
+            props.obj.pageImages.map(async (str) => {
             const { width, height } = await fetchImageSize(str);
             console.log(width, height);
             if (width === 1 && height === 1) return false;
@@ -29,7 +29,7 @@ const CarItem: React.FC<IProps> = (props) => {
             return true;
           })
         );
-        const finalFilteredImages = props.obj.images.filter((_, index) => filteredImages[index]);
+        const finalFilteredImages = props.obj.pageImages.filter((_, index) => filteredImages[index]);
         setImageLinks(finalFilteredImages);
       };
     

@@ -1,22 +1,20 @@
-type CarObject =  {
-    title: string,
-    link: string,
-    images: string[],
-    rate: string,
-    equipment: string,
-    year: string,
-    capacity: string,
-    power: string,
-    transmission: string,
-    body: string,
-    mileage: string,
-    auction: string,
-    lot: string,
-    status: string,
-    date: string,
-    lastBet: string,
-    price: string,
-    pageImages?:string[],
-    _id: string
+type CarObject =     {
+    "name": string;
+    "year": string
+    "color": string;
+    "startPrice": string;
+    "auction": string;
+    "body": string;
+    "engine": string;
+    "auctionDate": string;
+    "complectation": string;
+    "mileage": string;
+    "rate": string;
+    "productionDate": string;
+    "lot": string;
+    "translateAudio":  string;
+    "translateText":  string;
+    "pageImages":  string[];
+    "_id":string;
 }
 export default CarObject
