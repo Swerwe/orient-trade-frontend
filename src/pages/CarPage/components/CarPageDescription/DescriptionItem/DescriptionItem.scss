@@ -1,0 +1,28 @@
+.DescriptionItem{
+    font-family: 'TildaSans',Arial,sans-serif;
+    .item{
+        display: flex;
+
+        gap:10px;
+        .content,.name{
+            display: flex;
+            align-items: center;
+        }
+        .name{
+            font-size: 22px;
+            text-align: left;
+            width: 180px;
+            height: 40px;
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 2px;
+            font-weight: 500;
+        }
+        .content{
+            font-size: 19px;
+            width: 200px;
+            text-align: left;
+        }
+
+    }    
+}

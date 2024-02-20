@@ -11,20 +11,10 @@
             font-size: 25px;
             margin: 0;
         }
+        .CarPageDescription__values{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
-    }
-    .CarPageDescription__values{
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        align-items:start;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 0;
-        span{
-            margin-right: 5px;
-            font-weight: normal;
-            color: #3e4246;
         }
     }
 

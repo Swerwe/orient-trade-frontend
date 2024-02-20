@@ -4,7 +4,7 @@ import './CarPageDescription.scss'
 import CarPageDescriptionImages from '../CarPageDescriptionImages/CarPageDescriptionImages';
 import AuctionListDescription from '../AuctionListDescription/AuctionListDescription';
 import { DescriptionItem } from './DescriptionItem/DescriptionItem';
-import ReactAudioPlayer from 'react-audio-player';
+import { Translate } from './Translate/Translate';
 interface ICarPageDescriptionProps {
     className?: string;
     obj: CarObject;
@@ -39,25 +39,20 @@ const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({
                 <div className="TextDescription">
 
                     <ul className='CarPageDescription__values'>
-                        <DescriptionItem name='Год' content={year}/>
-                        <DescriptionItem name='Цвет' content={color}/>
-                        <DescriptionItem name='Начальная цена' content={startPrice}/>
-                        <DescriptionItem name='Аукцион' content={auction}/>
-                        <DescriptionItem name='Кузов' content={body}/>
-                        <DescriptionItem name='Двигатель' content={engine}/>
-                        <DescriptionItem name='Дата аукциона' content={auctionDate}/>
-                        <DescriptionItem name='Комплектация' content={complectation}/>
-                        <DescriptionItem name='Пробег' content={mileage}/>
-                        <DescriptionItem name='Оценка' content={rate}/>
-                        <DescriptionItem name='Дата производства' content={productionDate}/>
-                        {translateAudio &&
-                        <ReactAudioPlayer
-                            src={translateAudio}
-                            controls
-                        />}
-                        <DescriptionItem name='Лот' content={lot}/>
-                        <DescriptionItem name='Перевод' content={translateText}/>
+                        <DescriptionItem name='Аукцион' content={auction} />
+                        <DescriptionItem name='Лот' content={lot} />
+                        <DescriptionItem name='Год' content={year} />
+                        <DescriptionItem name='Цвет' content={color} />
+                        <DescriptionItem name='Начальная цена' content={startPrice} />
+                        <DescriptionItem name='Кузов' content={body} />
+                        <DescriptionItem name='Двигатель' content={engine} />
+                        <DescriptionItem name='Дата аукциона' content={auctionDate} />
+                        <DescriptionItem name='Комплектация' content={complectation} />
+                        <DescriptionItem name='Пробег' content={mileage} />
+                        <DescriptionItem name='Оценка' content={rate} />
+                        <DescriptionItem name='Дата производства' content={productionDate} />
                     </ul>
+                    <Translate translateAudio={translateAudio} translateText={translateText} />
                 </div>
             </div>
             <AuctionListDescription />

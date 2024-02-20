@@ -9,7 +9,7 @@ interface IDescriptionItemProps {
 export const DescriptionItem: React.FC<IDescriptionItemProps> = ({name,content}) => {
     return (
         <div className="DescriptionItem">
-            {content && <li><span>{name}:</span> {content}</li>}
+            {content && <div className='item'><span className='name'>{name}</span> <span className='content'>{content}</span></div>}
       </div>
     );
 };
