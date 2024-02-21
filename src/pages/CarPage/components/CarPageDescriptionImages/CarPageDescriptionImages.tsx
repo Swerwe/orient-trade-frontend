@@ -11,13 +11,12 @@ interface ICarPageDescriptionImagesProps {
 const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImagesProps> = ({ pageImages }) => {
 
   return (
-    <div>
-      <ImageGallery additionalClass="CarPageGallery" showFullscreenButton={true} showPlayButton={false}
+      <ImageGallery additionalClass="CarPageGallery" showFullscreenButton={true} showPlayButton={false} 
         items={pageImages.map(str => {
           return { original: str, thumbnail: str }
         })}
       />
-    </div>);
+      );
 };
 
 export default CarPageDescriptionImages;

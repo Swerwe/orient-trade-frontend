@@ -32,7 +32,7 @@ const CarPage: React.FC = () => {
     return (
     <div className='CarPage'>
         <NavBar color='black' />
-        {(!isLoading) ? <CarPageDescription obj = {data as CarObject} /> : <CarPageEmpty isLoading={isLoading} />}      
+        <CarPageDescription obj = {data as CarObject} /> 
     </div>);
 };
 
