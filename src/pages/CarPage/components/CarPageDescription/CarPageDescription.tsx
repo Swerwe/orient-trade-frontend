@@ -9,6 +9,7 @@ interface ICarPageDescriptionProps {
     className?: string;
     obj: CarObject;
 }
+/*
 const test = {
     "name": "TOYOTA PROBOX",
     "year": "2019",
@@ -78,7 +79,9 @@ const test = {
         "https://img.ecarjp.com/auto/6b72dcbd-a60b-4042-97e5-241e22204fd6.jpg",
         "https://img.ecarjp.com/auto/b176d520-b441-46d7-af75-b83634cf8ad4.jpg"
     ]
+
 };
+*/
 const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({ obj }) => {
     const {
         name,
@@ -99,7 +102,7 @@ const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({
         pageImages,
 
 
-    } = test;
+    } = obj;
     return (
         <div>
             <h1>{name}</h1>
