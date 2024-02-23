@@ -8,7 +8,7 @@ interface ITranslateProps {
 }
 
 export const Translate: React.FC<ITranslateProps> = ({translateText,translateAudio}) => {
-    const isTranslate = translateText && translateAudio;
+    const isTranslate = translateText || translateAudio;
     return (
       <div>
         {isTranslate && 
