@@ -20,7 +20,7 @@
         background-image: url("../../../../public/orient-background.jpg");
         background-size: cover;
         background-position: center;
-
+        padding-top: 80px;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -75,8 +75,10 @@
 }
 @media screen and (max-width:1000px){
     .MainHeader{
-        margin-top: 460px;
+
         .content{
+            padding-top: 10px;
+            margin-top: 500px;
             .arrow{
                 left: 47vw;
             }
@@ -87,6 +89,7 @@
 @media screen and (max-width:625px){
     .MainHeader{
         .content{
+
             .header{
                 font-size: 50px;
             }
