@@ -2,7 +2,6 @@ import * as React from 'react';
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./CarPageDescriptionImages.scss"
-import { useEffect, useState } from 'react';
 
 interface ICarPageDescriptionImagesProps {
   className?: string;
