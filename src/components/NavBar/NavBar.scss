@@ -34,16 +34,28 @@
         }
         div{
             color: #dddbdb;
-            font-size: 16px;
+            font-size: 20px;
             transition: color 0.3s, font-size 0.3s ,padding-bottom 0.2s; 
             font-weight: 600;
-            width: 70px;
+            min-width: 80px;
             height: 15px;
             cursor: pointer;
+            display: flex;
+            justify-content: center;
             &:hover{
                 color: #fff;
                 padding-bottom: 1px;
 
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px){
+    .NavBar{
+        .NavBar__items{
+            gap: 25px;
+            div{
+                min-width: none;
             }
         }
     }
@@ -58,7 +70,10 @@
 @media screen and (max-width:1100px){
     .NavBar{
         .NavBar__items{
-
+            div{
+                width: 70px;
+                font-size: 16px;
+            }
             gap:20px;
         }
     }
@@ -78,6 +93,9 @@
             order: 1;
             flex-direction: column;
             position:initial;
+            div{
+                font-size: 20px;
+            }
 
         }
         .contacts{
