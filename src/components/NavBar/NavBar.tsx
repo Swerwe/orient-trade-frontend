@@ -13,7 +13,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({color}) => {
     return (
         <nav className='NavBar' style={{backgroundColor:color}}>
             <CompanyName/>
-            <div className='NavBar__items'>
+            {/* <div className='NavBar__items'>
                 <Link to={"/"}>
                     <div>
                         О нас
@@ -39,7 +39,7 @@ const NavBar: React.FunctionComponent<INavBarProps> = ({color}) => {
                         Обзоры
                     </div>
                 </Link>
-            </div>
+            </div> */}
             <div className="contacts">
                 <a href='https://t.me/Japcar25'>
                     <TelegramIcon height={30} width={30} />
