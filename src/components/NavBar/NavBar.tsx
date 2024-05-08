@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './NavBar.scss'
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+// import { Link } from 'react-router-dom';
+// import { HashLink } from 'react-router-hash-link';
 import { CompanyName } from './CompanyName/CompanyName';
 import { TelegramIcon } from '../../icons/TelegramIcon/TelegramIcon';
 import { InstagramIcon } from '../../icons/InstagramIcon/InstagramIcon';

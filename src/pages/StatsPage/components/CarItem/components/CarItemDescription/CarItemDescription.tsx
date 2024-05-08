@@ -1,6 +1,6 @@
 import React from 'react';
 import './CarItemDescription.scss';
-import CarObject from '../../../../../../types/types';
+import CarObject from '../../../../../../models/CarObject';
 import { Link } from 'react-router-dom';
 interface IProps {
     obj: CarObject

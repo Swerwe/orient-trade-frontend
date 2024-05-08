@@ -4,7 +4,7 @@ import CarList from '../../pages/StatsPage/components/CarList/CarList';
 import ListSort from './components/ListSort/ListSort';
 import ListFilter from './components/ListFilter/ListFilter';
 import './PaginatedList.scss'
-import CarObject from '../../types/types';
+import CarObject from '../../models/CarObject';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 interface IProps {
   className?: string;

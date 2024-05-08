@@ -1,6 +1,6 @@
 import React from 'react';
 import './CarList.scss';
-import CarObject from '../../../../types/types';
+import CarObject from '../../../../models/CarObject';
 import CarItem from '../CarItem/CarItem';
 import {Spin} from '@gravity-ui/uikit';
 interface IProps{

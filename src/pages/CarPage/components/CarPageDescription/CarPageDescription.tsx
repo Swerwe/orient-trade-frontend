@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CarObject from '../../../../types/types';
+import CarObject from '../../../../models/CarObject';
 import './CarPageDescription.scss'
 import CarPageDescriptionImages from '../CarPageDescriptionImages/CarPageDescriptionImages';
 import AuctionListDescription from '../AuctionListDescription/AuctionListDescription';

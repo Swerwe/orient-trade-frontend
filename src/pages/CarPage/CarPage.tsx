@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import CarObject from '../../types/types';
+import CarObject from '../../models/CarObject';
 import CarPageDescription from './components/CarPageDescription/CarPageDescription';
 import CarPageEmpty from './components/CarPageEmpty/CarPageEmpty';
 import NavBar from '../../components/NavBar/NavBar';
@@ -12,7 +12,7 @@ const CarPage: React.FC = () => {
     const [isLoading,setIsLoading] = useState<boolean>(true);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`/api/carpage?id=${id}`,
+            const response = await fetch(`https://orient-trade.ru/api/carpage?id=${id}`,
             {
               headers: {
                 "Content-Type": "application/json"
