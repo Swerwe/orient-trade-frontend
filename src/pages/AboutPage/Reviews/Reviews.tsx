@@ -8,10 +8,10 @@ export const Reviews: React.FC = () => {
 
         </div>
         <div className="images">
-            <img src={process.env.PUBLIC_URL + '2024-02-22 01.17.05.jpg'} />
-            <img src={process.env.PUBLIC_URL + '2024-02-22 01.23.46.jpg'} />           
-            <img style={{objectPosition:"90%"}} src={process.env.PUBLIC_URL + '2024-02-22 01.28.04.jpg'} />
-            <img style={{objectPosition:"90%"}} src={process.env.PUBLIC_URL + '2024-02-22 01.31.06.jpg'} />
+            <img src={process.env.PUBLIC_URL + '2024-02-22 01.17.05.webp'} />
+            <img src={process.env.PUBLIC_URL + '2024-02-22 01.23.46.webp'} />           
+            <img style={{objectPosition:"90%"}} src={process.env.PUBLIC_URL + '2024-02-22 01.28.04.webp'} />
+            <img style={{objectPosition:"90%"}} src={process.env.PUBLIC_URL + '2024-02-22 01.31.06.webp'} />
         </div>
       </div>
     );

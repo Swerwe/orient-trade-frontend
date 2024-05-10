@@ -13,10 +13,10 @@ export const Description: React.FC = () => {
             </span>
         </div>
         <div className="images">
-            <img src={process.env.PUBLIC_URL + '2024-02-22 01.38.12.jpg'} />
-            <img src={process.env.PUBLIC_URL + 'car2.jpeg'} />           
-            <img src={process.env.PUBLIC_URL + 'car3.jpeg'} />
-            <img src={process.env.PUBLIC_URL + 'map.jpeg'} />
+            <img src={process.env.PUBLIC_URL + '2024-02-22 01.38.12.webp'} />
+            <img src={process.env.PUBLIC_URL + 'car2.webp'} />           
+            <img src={process.env.PUBLIC_URL + 'car3.webp'} />
+            <img src={process.env.PUBLIC_URL + 'map.webp'} />
         </div>
       </div>
     );
