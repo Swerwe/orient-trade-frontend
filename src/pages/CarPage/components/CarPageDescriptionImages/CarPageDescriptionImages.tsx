@@ -10,9 +10,9 @@ interface ICarPageDescriptionImagesProps {
 const CarPageDescriptionImages: React.FunctionComponent<ICarPageDescriptionImagesProps> = ({ pageImages }) => {
 
   return (
-      <ImageGallery additionalClass="CarPageGallery" showFullscreenButton={true} showPlayButton={false} 
+      <ImageGallery lazyLoad={true} additionalClass="CarPageGallery" showFullscreenButton={true} showPlayButton={false} 
         items={pageImages.map(str => {
-          return { original: str, thumbnail: str }
+          return { original: str, thumbnail: str, thumbnailLoading:"lazy" }
         })}
       />
       );
