@@ -13,7 +13,6 @@ const CarPageEmpty: React.FC<ICarPageEmptyProps> = ({ className, isLoading }) =>
                     <div className='CarPageEmpty__title-description'>
                         <span className='CarPageEmpty__title'>Страница не найдена!</span>
                         <span className='CarPageEmpty__description'>Страница, которую вы ищете перемещена или не существует.</span>
-                        <button>Назад к статистике</button>
                     </div>
                     <div className='CarPageEmpty__code'>404</div>
                 </div>)
