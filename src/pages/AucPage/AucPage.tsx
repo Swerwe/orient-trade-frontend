@@ -1,7 +1,7 @@
 import React ,{ useEffect, useState } from 'react';
 import './AucPage.scss';
-import PaginatedList from '../../components/PaginatedList/PaginatedList';
-import NavBar from '../../components/NavBar/NavBar';
+import PaginatedList from '../../features/PaginatedList/PaginatedList';
+import {NavBar} from '@/widgets';
 const AucPage: React.FC = () => {
     const [pageCount, setPageCount] = useState(1);
     useEffect(() => {

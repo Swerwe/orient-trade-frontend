@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './CarItem.scss';
-import CarObject from '../../../../models/CarObject';
+import {CarObject} from '@/entities';
 import CarItemDescription from './components/CarItemDescription/CarItemDescription';
 import { getImageSize } from 'react-image-size';
 

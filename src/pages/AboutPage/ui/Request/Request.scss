@@ -1,0 +1,36 @@
+.Request{
+    font-family: 'TildaSans',Arial,sans-serif;
+    height: 800px;
+    background-image: url("../../../../../public/request-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffff;
+    .header{
+        padding-top: 300px;
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .description{
+        padding-top: 35px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+@media screen and (max-width:900px) {
+    .Request{
+        .header{
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .Request{
+        .header{
+            width: 290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

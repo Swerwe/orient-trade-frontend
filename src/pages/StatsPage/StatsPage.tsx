@@ -1,7 +1,7 @@
 import React ,{ useEffect, useState } from 'react';
 import './StatsPage.scss';
-import PaginatedList from '../../components/PaginatedList/PaginatedList';
-import NavBar from '../../components/NavBar/NavBar';
+import PaginatedList from '../../features/PaginatedList/PaginatedList';
+import {NavBar} from '@/widgets';
 const StatsPage: React.FC = () => {
     const [pageCount, setPageCount] = useState(1);
     useEffect(() => {

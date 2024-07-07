@@ -1,0 +1,56 @@
+.Promo{
+    height: 420px;
+    padding-top: 150px;
+    width: 100%;
+    background-image: url("../../../../../public/promo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header{
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 48px;
+        line-height: 1.23;
+        font-family: 'TildaSans',Arial,sans-serif;
+        font-weight: 600;
+        
+    }
+    .description{
+        font-family: 'TildaSans',Arial,sans-serif;
+        max-width: 600px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    .buttons{
+        position: relative;
+        margin-top: 50px;
+        .arrow{
+            width: 45px;
+            position: absolute;
+            left: -65px;
+            top:-20px;
+            
+
+        }
+        .subscribe{
+            font-family: 'TildaSans',Arial,sans-serif;
+            color: #ffff;
+            background-color: #f5914f;
+            font-size: 16px;
+            font-weight: 700;
+            width: 220px;
+            height: 60px;
+            border-radius: 5px;
+            cursor: pointer;
+            border:none;
+
+        }
+    }
+
+}

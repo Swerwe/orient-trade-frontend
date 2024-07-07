@@ -1,0 +1,41 @@
+.CarPageEmpty{
+    padding-top: 50px;
+    display: flex;
+    .CarPageEmpty__code{
+        color: #b2b6bd;
+        font-size: 180px;
+        margin-left: 30px;
+        font-weight: bolder;
+    }
+    .CarPageEmpty__title{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .CarPageEmpty__description{
+        font-size: 15px;
+        color: #636a79;
+    }
+    .CarPageEmpty__title-description{
+        padding: 40px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        button{
+            color:white;
+            border-radius: 4px;
+            height: 40px;
+            width: 210px;
+            border: none;
+            outline: none;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .CarPageEmpty{
+        flex-direction: column;
+        align-items: start;
+    }
+    
+}
