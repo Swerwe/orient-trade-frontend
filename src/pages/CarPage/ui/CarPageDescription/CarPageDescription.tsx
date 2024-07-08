@@ -51,7 +51,7 @@ const CarPageDescription: React.FunctionComponent<ICarPageDescriptionProps> = ({
                         <DescriptionItem name='Комплектация' content={complectation} />
                         <DescriptionItem name='Пробег' content={mileage} />
                         <DescriptionItem name='Оценка' content={rate} />
-                        {productionDate && <DescriptionItem name='Дата производства' content={productionDate} />}
+                        {productionDate && productionDate !== undefined &&  <DescriptionItem name='Дата производства' content={productionDate} />}
                     </ul>
                     <Translate translateAudio={translateAudio} translateText={translateText} />
                 </div>
