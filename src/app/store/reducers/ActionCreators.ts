@@ -5,7 +5,7 @@ export const fetchCarPage = createAsyncThunk(
     'carpage/fetch',
     async (id:string, thunkAPI) => {
         try{
-            const response = await axios.get<CarObject[]>(`https://orient-trade.ru/api/carpage?id=${id}`);
+            const response = await axios.get<CarObject[]>(`https://orientcar.ru/api/carpage?id=${id}`);
             return response.data;
         }catch(e){
             return thunkAPI.rejectWithValue("Car page loading error...");
