@@ -17,7 +17,7 @@ function App() {
         <Routes>
         <Route path="/" Component={AboutPage} />
           <Route
-          path="*"
+          path="/"
           element={<Navigate to="/" replace />}
           />
           <Route path="/carpage/*"  Component={CarPage} />
